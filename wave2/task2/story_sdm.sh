@@ -51,8 +51,8 @@ EOF
 display_banner
 # Install aria2 if not present
 if ! [ -x "$(command -v aria2c)" ]; then
-    echo "Installing aria2 for faster downloads..."
-    sudo apt-get install -y aria2
+    echo "Installing dependencies..."
+    sudo apt-get install -y aria2 lz4 curl
 fi
 
 # Get user input for snapshot URLs
